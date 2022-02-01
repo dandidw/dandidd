@@ -1,0 +1,61 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="W.3.css">
+<body style="background-image: url('logo.jpg');" >
+    <style>
+        body {
+          background-image: url('img_girl.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style> 
+<div class="w3-container">
+    <img src="logo.jpg"  width="10%" height="10%">
+</div>
+<div class="w3-bar w3-pink">
+ <button class="w3-bar-item w3-button" onclick="grup('Home')"><img src="logo.jpg" width="25px" height="25px"></button>
+ <button class="w3-bar-item w3-button" onclick="grup('Twice')">Twice</button>
+ <button class="w3-bar-item w3-button" onclick="grup('Jihyo')">Jihyo</button>
+ <button class="w3-bar-item w3-button" onclick="grup('Momo')">Momo</button>
+ <button class="w3-bar-item w3-button" onclick="grup('Nayeon')">Nayeon</button>
+</div>
+
+<div id="Home" class="w3-container twice w3-center">
+    <h2>Tugas 13 Pemmrograman web</h2>
+    <p  class="w3-animate-left">Dandi Dwi Darmawan</p>
+    <p  class="w3-animate-left">Teknik Informatika-1</p>
+    </div>
+<div id="Twice" class="w3-container twice w3-center" style="display:none">
+ <h2>Twice</h2>
+ <img class="w3-animate-zoom" src="full.jpg"  width="40%" height="40%">
+ <p  class="w3-animate-left"><b> (Hangul: 트와이스; Jepang: トゥワイス), adalah sebuah grup idola wanita asal Korea Selatan yang dibentuk oleh JYP Entertainment. Grup ini terdiri dari sembilan anggota: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, dan Tzuyu. Twice dibentuk melalui sebuah program televisi berjudul Sixteen, dan melakukan debut mereka pada tanggal 20 Oktober 2015 dengan album mini bertajuk The Story Begins.[3]</p>
+</div>
+<div id="Jihyo" class="w3-container twice w3-center" style="display:none">
+ <h2>Jihyo</h2>
+ <img class="w3-animate-zoom" src="yo.jpg" width="20%" height="40%">
+ <p  class="w3-animate-left"> Ji-hyo (lahir 1 Februari 1997) atau lebih dikenal sebagai Jihyo, adalah seorang penyanyi dan anggota dari grup vokal wanita Korea Selatan, Twice yang dibentuk oleh JYP Entertainment. Sebagai vokalis utama di dalam grup, ia dikenal karena memiliki suara yang kuat, kemampuan menari, dan karismanya. Jihyo juga merupakan leader dari Twice.</p>
+</div>
+<div id="Momo" class="w3-container twice w3-center" style="display:none">
+ <h2>Momo</h2>
+ <img class="w3-animate-fading" src="mm.jpg"  width="20%" height="40%">
+ <p  class="w3-animate-left">Momo Hirai (平井 もも, lahir 9 November 1996), lebih dikenal sebagai Momo (Hangul: 모모; Hiragana: もも), adalah seorang penyanyi dan penari asal Jepang yang berkarier di Korea Selatan. Ia adalah anggota dari grup vokal wanita, Twice, yang dibentuk oleh JYP Entertainment. Momo adalah salah satu dari tiga anggota Twice yang berasal dari Jepang.</p>
+</div>
+<div id="Nayeon" class="w3-container twice w3-center" style="display:none">
+ <h2>Nayeon</h2>
+ <img class="w3-animate-left" src="ny.jpg" width="20%" height="40%">
+ <p   class="w3-animate-left">Na-yeon (Hangul: 임나연; lahir 22 September 1995), lebih dikenal sebagai Nayeon, adalah seorang penyanyi asal Korea Selatan. Setelah ikut serta dalam acara realitas berjudul Sixteen pada tahun 2015, ia terpilih menjadi anggota grup vokal wanita asal Korea Selatan, Twice, yang dibentuk oleh JYP Entertainment.[3][4] Nayeon dideskripsikan sebagai salah satu vokalis dan penari utama Twice, dan sering kali mengisi posisi center selama melakukan tarian.[3][5] Nayeon adalah anggota Twice yang paling tua.[3][6] Selama dua tahun berturut-turut (2017 dan 2018), ia merupakan idola Korea terpopuler keenam dalam jajak pendapat musik tahunan Gallup Korea, dan naik ke posisi kelima pada tahun 2019.</p>
+</div>
+<script>
+function grup(girlband) {
+ var i;
+ var x = document.getElementsByClassName("twice");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(girlband).style.display = "block";
+}
+</script>
+</body>
+</html>
